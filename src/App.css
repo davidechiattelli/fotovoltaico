@@ -119,6 +119,7 @@
   background-color: #f8f9fa;
   border-radius: 6px;
   border: 1px solid #dee2e6;
+  text-align: start;
 }
 
 .demo-credentials small {
