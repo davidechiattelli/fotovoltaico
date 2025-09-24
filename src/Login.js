@@ -92,7 +92,7 @@ function Login({ onLoginSuccess }) {
 
         <div className="demo-credentials">
           <small>
-            <strong>Note:</strong> Crea un account su Supabase o usa le credenziali fornite
+            <strong>Note:</strong> Credenziali di test: User testfotovoltaico@test.it , password qwerty12
           </small>
         </div>
       </div>
