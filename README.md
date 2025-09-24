@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# 📘 README -- Fotovoltaico
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌞 Description
 
-## Available Scripts
+**Fotovoltaico** is the MVP of a web application designed to digitize
+the management of a company that sells photovoltaic systems.\
+In this first version, it allows users to log in, create quotes through
+an intuitive dashboard, and view saved quotes.\
+Future versions will focus on adding extra features to further simplify
+and digitize company operations (such as drafting contracts, calculating
+economic returns, and other routine tasks).
 
-In the project directory, you can run:
+## 🚀 Main Features
 
-### `npm start`
+-   🔐 **Secure authentication** with Supabase
+-   📊 **Interactive dashboard** for data visualization
+-   📝 **Quote management** (create, view, update)
+-   💾 **Integrated database** (SQL schema provided in
+    `database-schema.sql`)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   [React](https://reactjs.org/) -- user interface
+-   [Supabase](https://supabase.com/) -- authentication and database
+-   [JavaScript
+    (ES6+)](https://developer.mozilla.org/docs/Web/JavaScript)
+-   CSS3 for styling
 
-### `npm test`
+## 📦 Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  Clone the repository:
 
-### `npm run build`
+    ``` bash
+    git clone https://github.com/davidechiattelli/fotovoltaico.git
+    cd fotovoltaico
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.  Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ``` bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3.  Start the application locally:
 
-### `npm run eject`
+    ``` bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4.  The app will be available at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   Update the Supabase settings in `src/supabaseClient.js` with your
+    credentials.\
+-   If you want to use the sample database, import the schema contained
+    in `database-schema.sql`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Project Structure
 
-## Learn More
+    fotovoltaico/
+     ├── public/              # Static files (index.html, favicon, etc.)
+     ├── src/                 # React source code
+     │   ├── App.js           # Main component
+     │   ├── Dashboard.js     # User dashboard
+     │   ├── Login.js         # Login page
+     │   ├── authService.js   # Authentication handling
+     │   ├── preventiviService.js # Quote services
+     │   └── supabaseClient.js# Supabase configuration
+     ├── package.json         # Configurations and dependencies
+     ├── database-schema.sql  # Database schema
+     └── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📜 License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the **MIT License**.\
+You are free to use, modify, and distribute it with proper credit.
